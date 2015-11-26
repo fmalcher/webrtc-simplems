@@ -1,0 +1,21 @@
+{
+  "name": "simplems",
+  "version": "1.0.0",
+  "description": "a simple messaging server for multiparty communication",
+  "main": "server.js",
+  "devDependencies": {
+    "http": "0.0.0",
+    "websocket": "^1.0.19"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "messaging",
+    "server",
+    "multiparty"
+  ],
+  "author": "",
+  "license": "ISC"
+}
