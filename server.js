@@ -1,5 +1,6 @@
 var WebSocketServer = require('websocket').server;
-var http = require('http');
+var https = require('https');
+var fs = require('fs');
 var clients = [];
 var client_names = [];
 var conversations = [];
@@ -11,7 +12,10 @@ if(process.argv[2]){
 } else port = 1337; // else use standard port
 
 
-var server = http.createServer(function(request, response) {
+var server = https.createServer({
+    key: fs.readFileSync('key.pem'),
+    cert: fs.readFileSync('cert.pem')
+},function(request, response) {
   // process HTTP request. Since we're writing just WebSockets server
   // we don't have to implement anything.
 });
