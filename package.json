@@ -1,6 +1,6 @@
 {
   "name": "simplems",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a simple messaging server for multiparty communication",
   "main": "server.js",
   "dependencies": {
@@ -8,8 +8,8 @@
     "forever": "~0.15.3"
   },
   "scripts": {
-    "start": "node server.js",
-    "startForever": "forever --minUptime 1000 --spinSleepTime 1000 server.js"
+    "start": "node src/server.js",
+    "startForever": "forever --minUptime 1000 --spinSleepTime 1000 src/server.js"
   },
   "keywords": [
     "messaging",

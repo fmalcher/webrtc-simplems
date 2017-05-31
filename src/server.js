@@ -13,8 +13,8 @@ if(process.argv[2]){
 
 
 var server = https.createServer({
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem')
+    key: fs.readFileSync('data/certs/key.pem'),
+    cert: fs.readFileSync('data/certs/cert.pem')
 },function(request, response) {
   // process HTTP request. Since we're writing just WebSockets server
   // we don't have to implement anything.
