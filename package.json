@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "a simple messaging server for multiparty communication",
   "main": "server.js",
-  "devDependencies": {
-    "http": "0.0.0",
-    "websocket": "^1.0.19"
+  "dependencies": {
+    "websocket": "^1.0.19",
+    "forever": "~0.15.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "startForever": "forever --minUptime 1000 --spinSleepTime 1000 server.js"
   },
   "keywords": [
     "messaging",
